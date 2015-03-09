@@ -44,12 +44,14 @@
 extern SR_PRIV struct sr_transform_module transform_nop;
 extern SR_PRIV struct sr_transform_module transform_scale;
 extern SR_PRIV struct sr_transform_module transform_invert;
+extern SR_PRIV struct sr_transform_module transform_avg;
 /* @endcond */
 
 static const struct sr_transform_module *transform_module_list[] = {
 	&transform_nop,
 	&transform_scale,
 	&transform_invert,
+	&transform_avg,
 	NULL,
 };
 
